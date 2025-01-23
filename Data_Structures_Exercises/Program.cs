@@ -31,10 +31,34 @@ namespace Data_Structures_Exercises
                 {
                     Console.WriteLine($"You entered: {Option}");
 
-                    if (Option == 7)
+                    // Switch statement to handle menu options
+                    switch (Option)
                     {
-                        IsRunning = false; // Exit the program.
+                        case 1:
+                            // Call the method to add an element
+                            arrayExercise.AddToEnd();
+                            break;
+                        case 2:
+                          //  arrayExercise.InsertElement();
+                            break;
+                        case 3: 
+                         //   arrayExercise.DeleteElement();
+                            break;
+                        case 4:
+                         //   arrayExercise.DisplayArray();
+                            break;
+                        case 5:
+                         //   arrayExercise.DisplayCount();
+                            break;
+                        case 6:
+                         //   arrayExercise.ClearArray();
+                            break;
+                        case 7:
+                            IsRunning = false;
+                            Console.WriteLine("Exiting the program.");
+                            break;
                     }
+                    
                 }
                 else
                 {
