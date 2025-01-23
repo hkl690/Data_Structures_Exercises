@@ -57,7 +57,7 @@ namespace Data_Structures_Exercises
         {
             if (index < 0 || index > array.Length)
             {
-                Console.WriteLine("Invalid index.\n");
+                Console.WriteLine("Invalid index.");
                 return;
             }
             // Create a new array with an extra space
@@ -78,9 +78,37 @@ namespace Data_Structures_Exercises
             }
             // Update the reference to the new array
             array = newArray;
-            Console.WriteLine($"Inserted element {newValue} at index {index}.\n");
+            Console.WriteLine($"Inserted element {newValue} at index {index}.");
         }
 
+        /// <summary>
+        /// Method to delete the element at a given location (case 3)
+        /// </summary>
+        public void DeleteElement(int index)
+        {
+            if (index < 0 || index >= array.Length)
+            {
+                Console.WriteLine("Invalid index.");
+                return;
+            }
+            // Create a new array with one less space
+            int[] newArray = new int[array.Length - 1];
+
+            for (int i = 0; i < index; i++)
+            {
+                newArray[i] = array[i];
+            }
+            // Copy elements after the deleted index
+            for (int i = index + 1; i < array.Length; i++)
+            {
+                newArray[i - 1] = array[i];
+            }
+            // Update the reference to the new array
+            array = newArray;
+
+            Console.WriteLine($"Element at index {index} has been deleted.");
+
+        }
 
         /// <summary>
         /// Method to display the array (case 4)
@@ -92,12 +120,13 @@ namespace Data_Structures_Exercises
                 Console.WriteLine("The array is empty.\n");
                 return;
             }
+            /*
             Console.WriteLine("These are the elements in your array.");
             for (int i = 0; i < array.Length; i++)
             {
                 Console.WriteLine($"Index {i}: {array[i]}");
-            }
-            Console.WriteLine();
+            }*/
+            Console.WriteLine("Array elements: [" + string.Join(", ", array) + "]\n");
         }
 
         /// <summary>
@@ -106,7 +135,7 @@ namespace Data_Structures_Exercises
         public void DisplayCount()
         {
             int count = array.Length;
-            Console.WriteLine($"The array contains {count} elements.\n");
+            Console.WriteLine($"The array contains {count} elements.");
         }
 
         /// <summary>
@@ -115,7 +144,7 @@ namespace Data_Structures_Exercises
         public void ClearArray()
         {
             array = new int[0];
-            Console.WriteLine("Array has been cleared.\n");
+            Console.WriteLine("Array has been cleared.");
         }
 
     }

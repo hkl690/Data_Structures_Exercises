@@ -18,8 +18,8 @@ namespace Data_Structures_Exercises
             Console.WriteLine("Press 1 to add to the end of the array.\n" +
                 "Press 2 to insert an element at a given location.\n" +
                 "Press 3 to delete an element from a given location.\n" +
-                "Press 4 to show all the array elements.\n" +
-                "Press 5 to display the count of the total number of elements.\n" +
+                "Press 4 to display all of the array elements.\n" +
+                "Press 5 to the count of the total number of elements.\n" +
                 "Press 6 to clear (initialize) an array.\n" +
                 "Press 7 to exit the program.\n");
 
@@ -36,6 +36,7 @@ namespace Data_Structures_Exercises
                     {
                         case 1:                            
                             arrayExercise.AddToEnd();
+                            arrayExercise.DisplayArray();
                             break;
                         case 2:
                             Console.WriteLine("Enter the index where you want to insert the element: ");
@@ -43,18 +44,24 @@ namespace Data_Structures_Exercises
                             Console.WriteLine("Enter the value you want to insert: ");
                             int InsertValue = Convert.ToInt32(Console.ReadLine());
                             arrayExercise.InsertElement(InsertIndex, InsertValue);
+                            arrayExercise.DisplayArray();
                             break;
                         case 3: 
-                         //   arrayExercise.DeleteElement();
+                            Console.WriteLine("Enter the index of the element you want to delete: ");
+                            int DeleteIndex = Convert.ToInt32(Console.ReadLine());
+                            arrayExercise.DeleteElement(DeleteIndex);
+                            arrayExercise.DisplayArray();
                             break;
                         case 4:
                             arrayExercise.DisplayArray();
                             break;
                         case 5:
                             arrayExercise.DisplayCount();
+                            arrayExercise.DisplayArray();
                             break;
                         case 6:
                             arrayExercise.ClearArray();
+                            arrayExercise.DisplayArray();
                             break;
                         case 7:
                             IsRunning = false;
