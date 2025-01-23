@@ -18,7 +18,7 @@ namespace Data_Structures_Exercises
         }
 
         /// <summary>
-        /// Method to add an element to the end of the array
+        /// Method to add an element to the end of the array (case 1)
         /// </summary>  
         public void AddToEnd()
         {
@@ -50,13 +50,13 @@ namespace Data_Structures_Exercises
         }
 
         /// <summary>
-        /// Method to display the array
+        /// Method to display the array (case 4)
         /// </summary>
         public void DisplayArray()
         {
             if (array.Length == 0)
             {
-                Console.WriteLine("The array is empty.");
+                Console.WriteLine("The array is empty.\n");
                 return;
             }
             Console.WriteLine("These are the elements in your array.");
@@ -66,5 +66,13 @@ namespace Data_Structures_Exercises
             }
             Console.WriteLine();
         }
+
+
+        public void ClearArray()
+        {
+            array = new int[0];
+            Console.WriteLine("Array has been cleared.\n");
+        }
+
     }
 }

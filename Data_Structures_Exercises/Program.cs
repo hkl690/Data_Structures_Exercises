@@ -51,7 +51,7 @@ namespace Data_Structures_Exercises
                          //   arrayExercise.DisplayCount();
                             break;
                         case 6:
-                         //   arrayExercise.ClearArray();
+                            arrayExercise.ClearArray();
                             break;
                         case 7:
                             IsRunning = false;
