@@ -34,12 +34,15 @@ namespace Data_Structures_Exercises
                     // Switch statement to handle menu options
                     switch (Option)
                     {
-                        case 1:
-                            // Call the method to add an element
+                        case 1:                            
                             arrayExercise.AddToEnd();
                             break;
                         case 2:
-                          //  arrayExercise.InsertElement();
+                            Console.WriteLine("Enter the index where you want to insert the element: ");
+                            int InsertIndex = Convert.ToInt32(Console.ReadLine());
+                            Console.WriteLine("Enter the value you want to insert: ");
+                            int InsertValue = Convert.ToInt32(Console.ReadLine());
+                            arrayExercise.InsertElement(InsertIndex, InsertValue);
                             break;
                         case 3: 
                          //   arrayExercise.DeleteElement();
@@ -48,7 +51,7 @@ namespace Data_Structures_Exercises
                             arrayExercise.DisplayArray();
                             break;
                         case 5:
-                         //   arrayExercise.DisplayCount();
+                            arrayExercise.DisplayCount();
                             break;
                         case 6:
                             arrayExercise.ClearArray();

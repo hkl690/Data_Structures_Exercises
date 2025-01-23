@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -50,6 +51,38 @@ namespace Data_Structures_Exercises
         }
 
         /// <summary>
+        /// Method to insert an element at a given location (case 2)
+        /// </summary>
+        public void InsertElement(int index, int newValue)
+        {
+            if (index < 0 || index > array.Length)
+            {
+                Console.WriteLine("Invalid index.\n");
+                return;
+            }
+            // Create a new array with an extra space
+            int[] newArray = new int[array.Length + 1];
+
+            // Copy the elements from the old array to the new array
+            for (int i = 0; i < index; i++)
+            {
+                newArray[i] = array[i];
+            }
+            // Insert the new element at the specified index
+            newArray[index] = newValue;
+
+            // Copy the remaining elements from the old array to the new array
+            for (int i = index; i < array.Length; i++)
+            {
+                newArray[i + 1] = array[i];
+            }
+            // Update the reference to the new array
+            array = newArray;
+            Console.WriteLine($"Inserted element {newValue} at index {index}.\n");
+        }
+
+
+        /// <summary>
         /// Method to display the array (case 4)
         /// </summary>
         public void DisplayArray()
@@ -67,7 +100,18 @@ namespace Data_Structures_Exercises
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Method to display the count of the total number of elements in the array (case 5)
+        /// </summary>
+        public void DisplayCount()
+        {
+            int count = array.Length;
+            Console.WriteLine($"The array contains {count} elements.\n");
+        }
 
+        /// <summary>
+        /// Method to clear (initialize) the array (case 6)
+        /// </summary> 
         public void ClearArray()
         {
             array = new int[0];
