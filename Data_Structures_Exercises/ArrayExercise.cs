@@ -48,5 +48,23 @@ namespace Data_Structures_Exercises
 
             Console.WriteLine($"Element {newElement} added to the end of the array.");
         }
+
+        /// <summary>
+        /// Method to display the array
+        /// </summary>
+        public void DisplayArray()
+        {
+            if (array.Length == 0)
+            {
+                Console.WriteLine("The array is empty.");
+                return;
+            }
+            Console.WriteLine("These are the elements in your array.");
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine($"Index {i}: {array[i]}");
+            }
+            Console.WriteLine();
+        }
     }
 }

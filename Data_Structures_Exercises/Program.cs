@@ -17,7 +17,7 @@ namespace Data_Structures_Exercises
             Console.WriteLine("An menu of options: \n");
             Console.WriteLine("Press 1 to add to the end of the array.\n" +
                 "Press 2 to insert an element at a given location.\n" +
-                "Press 3 to delete an element from a given location." +
+                "Press 3 to delete an element from a given location.\n" +
                 "Press 4 to show all the array elements.\n" +
                 "Press 5 to display the count of the total number of elements.\n" +
                 "Press 6 to clear (initialize) an array.\n" +
@@ -45,7 +45,7 @@ namespace Data_Structures_Exercises
                          //   arrayExercise.DeleteElement();
                             break;
                         case 4:
-                         //   arrayExercise.DisplayArray();
+                            arrayExercise.DisplayArray();
                             break;
                         case 5:
                          //   arrayExercise.DisplayCount();
