@@ -6,7 +6,7 @@ namespace Data_Structures_Exercises
     {
         static void Main(string[] args)
         {
-            ArrayExercise arrayExercise = new ArrayExercise();
+            ListExercise listExercise = new ListExercise();
             string UserInput1;
             int Option = 0;
             bool IsRunning = true;
@@ -15,12 +15,12 @@ namespace Data_Structures_Exercises
             while (IsRunning)
             { 
             Console.WriteLine("An menu of options: \n");
-            Console.WriteLine("Press 1 to add to the end of the array.\n" +
+            Console.WriteLine("Press 1 to add to the end of the list.\n" +
                 "Press 2 to insert an element at a given location.\n" +
                 "Press 3 to delete an element from a given location.\n" +
-                "Press 4 to display all of the array elements.\n" +
+                "Press 4 to display all of the list elements.\n" +
                 "Press 5 to the count of the total number of elements.\n" +
-                "Press 6 to clear (initialize) an array.\n" +
+                "Press 6 to clear (initialize) an list.\n" +
                 "Press 7 to exit the program.\n");
 
                 Console.WriteLine("Please enter a number between 1 and 7: ");
@@ -35,33 +35,33 @@ namespace Data_Structures_Exercises
                     switch (Option)
                     {
                         case 1:                            
-                            arrayExercise.AddToEnd();
-                            arrayExercise.DisplayArray();
+                            listExercise.AddToEnd();
+                            listExercise.DisplayList();
                             break;
                         case 2:
                             Console.WriteLine("Enter the index where you want to insert the element: ");
                             int InsertIndex = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine("Enter the value you want to insert: ");
                             int InsertValue = Convert.ToInt32(Console.ReadLine());
-                            arrayExercise.InsertElement(InsertIndex, InsertValue);
-                            arrayExercise.DisplayArray();
+                            listExercise.InsertElement(InsertIndex, InsertValue);
+                            listExercise.DisplayList();
                             break;
                         case 3: 
                             Console.WriteLine("Enter the index of the element you want to delete: ");
                             int DeleteIndex = Convert.ToInt32(Console.ReadLine());
-                            arrayExercise.DeleteElement(DeleteIndex);
-                            arrayExercise.DisplayArray();
+                            listExercise.DeleteElement(DeleteIndex);
+                            listExercise.DisplayList();
                             break;
                         case 4:
-                            arrayExercise.DisplayArray();
+                            listExercise.DisplayList();
                             break;
                         case 5:
-                            arrayExercise.DisplayCount();
-                            arrayExercise.DisplayArray();
+                            listExercise.DisplayCount();
+                            listExercise.DisplayList();
                             break;
                         case 6:
-                            arrayExercise.ClearArray();
-                            arrayExercise.DisplayArray();
+                            listExercise.ClearList();
+                            listExercise.DisplayList();
                             break;
                         case 7:
                             IsRunning = false;
