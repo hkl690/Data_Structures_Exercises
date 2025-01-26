@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#_List_1", "Data_Structures_Exercises\C#_List_1.csproj", "{F58929A1-2D2A-4A3B-BB9A-6A551B9B7733}"
-EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python_List_1", "Array_Exercises\Python_List_1.pyproj", "{850840E5-EF1B-44E9-AD06-13321A82E38E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "List_1", "List_1", "{D303E4FB-4B82-4FCE-BD81-AFFE929F5A11}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queue_2", "Queue_2", "{0E19A382-A713-43B8-8961-3DB168EB5F1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#_List_1", "List_1\C#_List_1\C#_List_1.csproj", "{6E53535C-4784-4646-B3A6-83F766D1E5B2}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python_List_1", "List_1\Python_List_1\Python_List_1.pyproj", "{850840E5-EF1B-44E9-AD06-13321A82E38E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F58929A1-2D2A-4A3B-BB9A-6A551B9B7733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F58929A1-2D2A-4A3B-BB9A-6A551B9B7733}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F58929A1-2D2A-4A3B-BB9A-6A551B9B7733}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F58929A1-2D2A-4A3B-BB9A-6A551B9B7733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E53535C-4784-4646-B3A6-83F766D1E5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E53535C-4784-4646-B3A6-83F766D1E5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E53535C-4784-4646-B3A6-83F766D1E5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E53535C-4784-4646-B3A6-83F766D1E5B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{850840E5-EF1B-44E9-AD06-13321A82E38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{850840E5-EF1B-44E9-AD06-13321A82E38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
@@ -28,7 +28,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F58929A1-2D2A-4A3B-BB9A-6A551B9B7733} = {D303E4FB-4B82-4FCE-BD81-AFFE929F5A11}
+		{6E53535C-4784-4646-B3A6-83F766D1E5B2} = {D303E4FB-4B82-4FCE-BD81-AFFE929F5A11}
 		{850840E5-EF1B-44E9-AD06-13321A82E38E} = {D303E4FB-4B82-4FCE-BD81-AFFE929F5A11}
 	EndGlobalSection
 EndGlobal
