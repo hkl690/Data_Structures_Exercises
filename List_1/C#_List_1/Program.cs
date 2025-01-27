@@ -11,6 +11,8 @@ namespace Data_Structures_Exercises
             int Option = 0;
             bool IsRunning = true;
 
+            // Note: to improve this main method, you could add a method to display the menu
+
             // Loop for both menu display and validation
             while (IsRunning)
             { 
