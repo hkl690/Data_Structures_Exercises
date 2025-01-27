@@ -19,7 +19,7 @@ namespace Data_Structures_Exercises
                 "Press 2 to insert an element at a given location.\n" +
                 "Press 3 to delete an element from a given location.\n" +
                 "Press 4 to display all of the list elements.\n" +
-                "Press 5 to the count of the total number of elements.\n" +
+                "Press 5 to count the total number of elements.\n" +
                 "Press 6 to clear (initialize) an list.\n" +
                 "Press 7 to exit the program.\n");
 
