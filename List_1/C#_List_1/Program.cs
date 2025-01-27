@@ -14,7 +14,7 @@ namespace Data_Structures_Exercises
             // Loop for both menu display and validation
             while (IsRunning)
             { 
-            Console.WriteLine("An menu of options: \n");
+            Console.WriteLine("A menu of options: \n");
             Console.WriteLine("Press 1 to add to the end of the list.\n" +
                 "Press 2 to insert an element at a given location.\n" +
                 "Press 3 to delete an element from a given location.\n" +
